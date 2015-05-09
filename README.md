@@ -1,2 +1,8 @@
-# Angular Flash Cards - Day 1, 2, 3
-Finished Lesson 1, 2, 3
+# Angular HomeworkApp COMS
+
+To run the app, run the following
+		
+		npm install
+		mongod
+		node seed.js
+		node start.js

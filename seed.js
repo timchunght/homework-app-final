@@ -3,7 +3,23 @@ var homeworks = [
         assignment: 'Test First JavaScript',
         url: 'https://github.com/timchunght/FullstackTestFirst',
         status: 'completed'
+    },
+    {
+        assignment: 'FlashCard Day1',
+        url: 'https://github.com/timchunght/flashcards-day1',
+        status: 'completed'
+    },
+    {
+        assignment: 'FlashCard Day2',
+        url: 'https://github.com/timchunght/flash-cards',
+        status: 'completed'
+    },
+    {
+        assignment: 'FlashCard Day3',
+        url: 'https://github.com/timchunght/flash-cards',
+        status: 'completed'
     }
+
     
 ];
 

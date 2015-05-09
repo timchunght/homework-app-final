@@ -1,6 +1,19 @@
 * {
   box-sizing: border-box; }
 
+.title {
+  display: table;
+  margin: 0 auto;
+  padding-top: 30px;
+
+}
+
+.title h1 {
+  font: bold;
+  text-align: center;
+  font-size: 5em;
+}
+
 .category-button {
   border: 1px solid black;
   background: none;

@@ -11,6 +11,8 @@ var publicPath = path.join(__dirname, '../public');
 // The path of our index.html file. ([ROOT]/index.html)
 var indexHtmlPath = path.join(__dirname, '../index.html');
 
+var aboutPath = path.join(__dirname, '../about.html');
+
 // http://nodejs.org/docs/latest/api/globals.html#globals_dirname
 // for more information about __dirname
 
@@ -25,6 +27,10 @@ app.use(express.static(publicPath));
 // If we're hitting our home page, serve up our index.html file!
 app.get('/', function (req, res) {
     res.sendFile(indexHtmlPath);
+});
+
+app.get('/about', function (req, res) {
+    res.sendFile(aboutPath);
 });
 
 app.use(function (req, res, next) {

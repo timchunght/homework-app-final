@@ -7,5 +7,11 @@ appControllers.controller('MainController', ['$scope', 'HomeworksFactory', funct
 		$scope.homeworks = homeworks;
 	});
 
+	$scope.showHomework = function (homework) {
+		console.log("clicked");
+		homework.clicked = !homework.clicked;
+
+	}
+
 
 }]);

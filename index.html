@@ -8,22 +8,29 @@
     </head>
 
     <body ng-app="homeworkApp">
-      
-
-      <div ng-include="'templates/stats.html'"></div>
+      <div class="nav">
+        <center>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+        </center>
+      </div>
 
       <div ng-controller="MainController">
-      {{homeworks}}
+      <div class="title">
+        <h1>Welcome to the 90s</h1>
+      </div>
+      <div ng-repeat="homework in homeworks">
         <div class="homework">
           <ul class="homework-details">
-            <li>Hello</li>
+          <h1 ng-click="showHomework(homework)">{{homework.assignment}} (click me)</h1>
+            <div ng-show="homework.clicked">
+              <li>Assignment: {{homework.assignment}}</li>
+              <li>Url: {{homework.url}}</li>
+              <li>Status: {{homework.status}}</li>
+            </div>
           </ul>
-
-          <h2>
-            <span>Yup, you got it right!</span>
-            <span>Nope, you got it wrong.</span>
-          </h2>
         </div>
+      </div>
 
       	
       </div>
