@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homeworks</title>
+        <!-- We've provided some styles for you, aren't we nice? -->
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    </head>
+
+    <body ng-app="homeworkApp">
+      
+
+      <div ng-include="'templates/stats.html'"></div>
+
+      <div ng-controller="MainController">
+      {{homeworks}}
+        <div class="homework">
+          <ul class="homework-details">
+            <li>Hello</li>
+          </ul>
+
+          <h2>
+            <span>Yup, you got it right!</span>
+            <span>Nope, you got it wrong.</span>
+          </h2>
+        </div>
+
+      	
+      </div>
+    </div>
+    	<script src="js/lib/angular.js"></script>
+    	<script src="js/app.js"></script>
+    	<script src="js/controllers/controllers.js"></script>
+      <script src="js/factories/factories.js"></script>
+    </body>
+    </body>
+</html>
